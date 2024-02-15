@@ -117,7 +117,7 @@ def main():
         # Check if the DataFrame is not empty
         if not df.empty:
             # Save the DataFrame to a PARQUET file
-            file_name = f"taxi_data/green_tripdata_2022-{str(month).zfill(2)}.parquet"
+            file_name = f"data/green_tripdata_2022-{str(month).zfill(2)}.parquet"
             df.to_parquet(file_name)
 
             # Upload the file to GCS
